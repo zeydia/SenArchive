@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:go_router/go_router.dart';
-import '../../providers/document_provider.dart';
+import '../../providers/document_mysql_stream_provider.dart';
 import '../../repositories/document_repository.dart';
-import '../../models/document_model.dart';
 
 class DocumentEditScreen extends ConsumerStatefulWidget {
   final String documentId;

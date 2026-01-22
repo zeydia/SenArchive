@@ -83,14 +83,14 @@ final routerProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: 'document_add',
             name: 'add_document',
-            builder: (context, state) => DocumentAddScreen(),
+            builder: (context, state) => AddDocumentScreen(),
           ),
           GoRoute(
             path: 'document_details/:docId',
             name: 'document_details',
             builder: (context, state) {
               final docId = state.pathParameters['docId']!;
-              return DocumentDetailScreen();//DocumentDetailScreen(documentId: docId);
+              return DocumentDetailScreen(documentId: docId);
             },
           ),
         ],

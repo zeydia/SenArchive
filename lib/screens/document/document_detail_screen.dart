@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../providers/document_provider.dart';
+import '../../providers/document_mysql_stream_provider.dart';
 import '../../repositories/document_repository.dart';
 import '../../models/document_model.dart';
 

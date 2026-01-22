@@ -114,7 +114,7 @@ class _AddDocumentScreenState extends ConsumerState<AddDocumentScreen> {
                 decoration: BoxDecoration(
                   color: Colors.indigo.withOpacity(0.05),
                   borderRadius: BorderRadius.circular(15),
-                  border: Border.all(color: Colors.indigo.withOpacity(0.2), dashStyle: const DashStyle(axis: [5, 5]) as DashStyle?),
+                  border: Border.all(color: Colors.indigo.withOpacity(0.2), ),
                 ),
                 child: Column(
                   children: [

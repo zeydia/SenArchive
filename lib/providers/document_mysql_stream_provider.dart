@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/document_model.dart';
+import '../repositories/auth_repository.dart';
 import '../repositories/document_repository.dart';
 import 'auth_provider.dart';
 

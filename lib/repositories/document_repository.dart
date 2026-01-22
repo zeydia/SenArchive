@@ -14,7 +14,7 @@ class DocumentRepository {
     required File file,
     required String userId,
   }) async {
-    final uri = Uri.parse(ApiConfig.addDocumentUrl());
+    final uri = Uri.parse(ApiService.addDocumentUrl());
     final req = http.MultipartRequest('POST', uri)
       ..fields['title'] = title.trim()
       ..fields['description'] = description.trim()
@@ -34,7 +34,7 @@ class DocumentRepository {
   }
 
   Future<List<DocumentModel>> fetchDocuments(String userId) async {
-    final uri = Uri.parse(ApiConfig.listDocumentsUrl(userId));
+    final uri = Uri.parse(ApiService.listDocumentsUrl(userId));
     final res = await http.get(uri);
 
     if (res.statusCode != 200) {
@@ -56,7 +56,7 @@ class DocumentRepository {
   }
 
   Future<void> deleteDocument(String id) async {
-    final uri = Uri.parse(ApiConfig.deleteDocumentUrl());
+    final uri = Uri.parse(ApiService.deleteDocumentUrl());
     final res = await http.post(uri, body: {'id': id});
 
     if (res.statusCode != 200) {
