@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "938393050592",
+    "project_id": "senarchive-cb8f6",
+    "storage_bucket": "senarchive-cb8f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938393050592:android:e4b9590ad28f824b681f85",
+        "android_client_info": {
+          "package_name": "com.example.sen_archive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo1SDkA7O3wvbRzlLN0ev58mM6KzpR8j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
